@@ -1,36 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="../css/disciplinas-style.css">
+<html lang="es"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disciplinas</title>
+    <title>Disciplinas | NeoFit Center</title>
+    <link rel="stylesheet" href="../css/disciplinas-style.css">
 </head>
 <body>
-    <h1 class="nuestras-disciplinas">Nuestras Disciplinas</h1>
-    
-    <!-- Info de Crossfit -->
-    <article class="crossfit">
-        <img src="../img/Crossfit 1.webp" alt="Crossfit" width="200">
-        <h3>Crossfit</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mini</p>
-    </article>
 
-    <!-- Info de Boxing -->
-    <article class="boxing">
-        <img src="../img/boxing.png" alt="Boxing" width="200">
-        <h3>Boxing</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam expedita ducimus </p>
-    </article>
-    
-    <!-- Info de Musculación -->
-    <article class="musculación">
-        <img src="../img/musculación.jpg" alt="Musculación" width="200">
-        <h3>Musculación</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque e</p>
-    </article>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./disciplinas.html">Disciplinas</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <h1 class="nuestras-disciplinas">Nuestras Disciplinas</h1>
+        
+        <section class="disciplinas-grid">
+            
+            <article class="disciplina-card crossfit">
+                <img src="../img/Crossfit 1.webp" alt="Atleta realizando CrossFit" width="200">
+                <h3>Crossfit</h3>
+                <p>Desafiá tus límites con nuestro entrenamiento de <strong>alta intensidad</strong>. Combinamos levantamiento olímpico, gimnasia y cardio en clases dinámicas diseñadas para mejorar tu fuerza y resistencia física total.</p>
+            </article>
 
-    
+            <article class="disciplina-card boxing">
+                <img src="../img/boxing.png" alt="Guantes de boxeo en entrenamiento" width="200">
+                <h3>Boxing</h3>
+                <p>Aprendé la técnica del boxeo recreativo mientras <strong>quemas calorias</strong> y <strong>liberas estrés</strong>. Un entrenamiento completo que mejora tu coordinación, agilidad y potencia, apto para todos los niveles de experiencia. </p>
+            </article>
+            
+            <article class="disciplina-card musculacion"> <img src="../img/musculación.jpg" alt="Equipamiento de musculación" width="200">
+                <h3>Musculación</h3>
+                <p>Lográ el <strong>cambio fisico</strong> que buscás en nuestra sala de pesas equipada con tecnología de punta. Contamos con rutinas personalizadas y el seguimiento de nuestros profesores para que entrenes de forma segura y eficiente.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 NeoFit Center - Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>

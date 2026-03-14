@@ -1,17 +1,91 @@
-*{
+/* RESET BASICO */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-html{
-    background-color: #15131B;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
 }
 
-h1{
-    font-family: "Montserrat", sans-serif;
-    color: whitesmoke;
-    margin-bottom: 30px;
-    
+/* HEADER */
+
+header {
+    background-color: black;
+    padding: 20px;
+    border-bottom: 2px solid #cfbcff;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover {
+    color: #cfbcff;
+}
+
+/* TITULO */
+
+.nuestras-disciplinas {
+    text-align: center;
+    margin: 50px 0 30px 0;
+    color: #cfbcff;
+    font-size: 2.2rem;
+}
+
+/* GRID DISCIPLINAS */
+
+.disciplinas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 40px 60px 40px;
+}
+
+/* CARDS */
+
+.disciplina-card {
+    background-color: #111;
+    border: 2px solid #cfbcff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.disciplina-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.disciplina-card h3 {
+    margin-bottom: 10px;
+    color: #cfbcff;
+}
+
+.disciplina-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    border-top: 2px solid #cfbcff;
+    text-align: center;
+    padding: 20px;
 }

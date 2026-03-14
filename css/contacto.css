@@ -1,0 +1,76 @@
+
+/* RESET BASICO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+
+/* SECCION */
+
+section {
+    width: 100%;
+    max-width: 500px;
+    background-color: #111;
+    border: 2px solid #cfbcff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* TITULO */
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #cfbcff;
+}
+
+/* FORMULARIO */
+
+form div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #cfbcff;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+/* BOTON */
+
+button {
+    padding: 10px;
+    background-color: #cfbcff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
