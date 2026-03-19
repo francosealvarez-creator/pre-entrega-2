@@ -1,0 +1,31 @@
+header {
+    background-color: $color-fondo;
+    padding: 20px;
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: $color-texto;
+
+                    &:hover {
+                        color: $color-principal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $color-fondo;
+    color: $color-texto;
+    text-align: center;
+    padding: 20px;
+}

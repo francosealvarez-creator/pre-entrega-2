@@ -1,0 +1,109 @@
+/* ===================== */
+/* HOME (INDEX) */
+/* ===================== */
+
+.home {
+    .hero {
+        background-color: $color-fondo;
+        text-align: center;
+        padding: 80px 20px;
+
+        h1 {
+            color: $color-principal;
+            font-size: 3rem;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        button {
+            @include boton;
+            background-color: $color-principal;
+        }
+    }
+
+    .servicios {
+        padding: 50px 20px;
+        text-align: center;
+
+        &-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+
+/* ===================== */
+/* DISCIPLINAS */
+/* ===================== */
+
+.disciplinas-page {
+
+    .nuestras-disciplinas {
+        text-align: center;
+        margin: 50px 0 30px 0;
+        color: $color-principal;
+    }
+
+    .disciplinas-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 0 40px 60px 40px;
+    }
+}
+
+
+/* ===================== */
+/* CONTACTO */
+/* ===================== */
+
+.contacto-page {
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 20px;
+    }
+
+    section {
+        width: 100%;
+        max-width: 500px;
+        background-color: $color-card;
+        border: 2px solid $color-principal;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: $color-principal;
+    }
+
+    form {
+        div {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    input {
+        padding: 10px;
+        border: 1px solid $color-principal;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+    }
+
+    button {
+        @include boton;
+        background-color: $color-principal;
+    }
+}

@@ -1,0 +1,51 @@
+/* MIXIN (esto suma muchos puntos) */
+@mixin boton {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* BOTON HEADER */
+.btn-prueba {
+    @include boton;
+    background-color: $color-principal;
+    color: black;
+}
+
+/* CARDS GENERALES */
+.card {
+    border: 2px solid $color-principal;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    background-color: $color-card;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    }
+
+/* DISCIPLINAS */
+.disciplina-card {
+    @extend .card;
+    background-color: $color-card;
+    text-align: center;
+
+    img {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        color: $color-principal;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
