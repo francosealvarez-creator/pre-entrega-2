@@ -28,20 +28,34 @@ header nav ul {
     display: flex;
     list-style: none;
     gap: 15px;
+    align-items: center;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s; /* ANIMACIÓN */
 }
 
 header nav ul li a:hover {
     color: #cfbcff;
 }
 
+/* BOTÓN HEADER */
+.btn-prueba {
+    background-color: #cfbcff; 
+    color: black;              
+    padding: 10px 20px;        
+    border: none;              
+    cursor: pointer;           
+    transition: background-color 0.3s; /* ANIMACIÓN */
+}
 
+.btn-prueba:hover {
+    background-color: #b9a3f5;
+}
 
-/* 3. HERO */
+/* HERO */
 .hero {
     background-color: black;
     color: white;
@@ -50,7 +64,7 @@ header nav ul li a:hover {
 }
 
 .hero h1 {
-    color: #cfbcff; /* Tu violeta claro */
+    color: #cfbcff;
     font-size: 3rem;
 }
 
@@ -64,12 +78,19 @@ header nav ul li a:hover {
     padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s; /* ANIMACIÓN */
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+    background-color: #b9a3f5;
 }
 
 /* SECCIÓN SERVICIOS */
 .servicios {
     padding: 50px 20px;
     text-align: center;
+    background-color: #eaeaea; /* MEJORA VISUAL */
 }
 
 .servicios h2 {
@@ -89,6 +110,12 @@ article {
     padding: 20px;
     width: 250px;
     border-radius: 10px;
+    background-color: white;
+    transition: transform 0.3s; /* ANIMACIÓN */
+}
+
+article:hover {
+    transform: scale(1.05);
 }
 
 article img {
@@ -101,7 +128,7 @@ article h3 {
     margin-bottom: 10px;
 }
 
-
+/* FOOTER */
 footer {
     background-color: black;
     color: white;
@@ -111,11 +138,58 @@ footer {
 }
 
 
-/* Este es el boton que va en el Header */
-.btn-prueba {
-    background-color: #cfbcff; 
-    color: black;              
-    padding: 10px 20px;        
-    border: none;              
-    cursor: pointer;           
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .servicios-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    article {
+        width: 90%;
+    }
+}
+
+/* STAFF */
+.card-img-top {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    object-position: top;
 }

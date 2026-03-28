@@ -1,4 +1,3 @@
-
 /* RESET BASICO */
 
 * {
@@ -13,7 +12,6 @@ body {
     color: white;
 }
 
-
 /* CONTENEDOR PRINCIPAL */
 
 main {
@@ -22,7 +20,6 @@ main {
     align-items: center;
     padding: 60px 20px;
 }
-
 
 /* SECCION */
 
@@ -56,12 +53,20 @@ label {
     font-size: 0.9rem;
 }
 
+/* INPUTS */
+
 input {
     padding: 10px;
     border: 1px solid #cfbcff;
     border-radius: 5px;
     background-color: black;
     color: white;
+    transition: border 0.3s; /* ANIMACIÓN */
+}
+
+input:focus {
+    border: 1px solid #b9a3f5;
+    outline: none;
 }
 
 /* BOTON */
@@ -73,4 +78,29 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s; /* ANIMACIÓN */
+}
+
+button:hover {
+    background-color: #b9a3f5;
+    transform: scale(1.05);
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 40px 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }

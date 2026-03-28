@@ -26,6 +26,13 @@
     .servicios {
         padding: 50px 20px;
         text-align: center;
+        background-color: #eaeaea;
+
+        h2 {
+            color: black;
+            margin-bottom: 30px;
+        }
+    
 
         &-grid {
             display: flex;
