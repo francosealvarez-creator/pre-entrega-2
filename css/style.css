@@ -34,7 +34,7 @@ header nav ul {
 header nav ul li a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s; /* ANIMACIÓN */
+    transition: color 0.3s;
 }
 
 header nav ul li a:hover {
@@ -48,7 +48,7 @@ header nav ul li a:hover {
     padding: 10px 20px;        
     border: none;              
     cursor: pointer;           
-    transition: background-color 0.3s; /* ANIMACIÓN */
+    transition: background-color 0.3s;
 }
 
 .btn-prueba:hover {
@@ -78,7 +78,7 @@ header nav ul li a:hover {
     padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s; /* ANIMACIÓN */
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .hero button:hover {
@@ -90,7 +90,7 @@ header nav ul li a:hover {
 .servicios {
     padding: 50px 20px;
     text-align: center;
-    background-color: #eaeaea; /* MEJORA VISUAL */
+    background-color: #eaeaea;                        
 }
 
 .servicios h2 {
@@ -111,7 +111,7 @@ article {
     width: 250px;
     border-radius: 10px;
     background-color: white;
-    transition: transform 0.3s; /* ANIMACIÓN */
+    transition: transform 0.3s;
 }
 
 article:hover {
