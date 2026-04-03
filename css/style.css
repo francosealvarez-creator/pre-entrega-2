@@ -41,6 +41,13 @@ header nav ul li a:hover {
     color: #cfbcff;
 }
 
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+}
+
 /* BOTÓN HEADER */
 .btn-prueba {
     background-color: #cfbcff; 
@@ -192,4 +199,16 @@ footer {
     height: 300px; 
     object-fit: cover;
     object-position: top;
+}
+
+header.staff {
+    justify-content: center !important;
+    min-height: 80px;
+    align-items: center !important;
+}
+
+header.comunidad{
+    justify-content: center !important;
+    min-height: 80px;
+    align-items: center !important;
 }
