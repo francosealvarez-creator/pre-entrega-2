@@ -12,7 +12,7 @@ body {
 }
 
 /* HEADER */
-header {
+header.home-header {
     background-color: black;
     padding: 20px;
     display: flex;
@@ -211,4 +211,215 @@ header.comunidad{
     justify-content: center !important;
     min-height: 80px;
     align-items: center !important;
+}
+
+
+/* ===================== */
+/* DISCIPLINAS */
+/* ===================== */
+
+.disciplinas-page header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.disciplinas-page {
+    background-color: black;
+    color: white;
+}
+
+/* TITULO */
+.nuestras-disciplinas {
+    text-align: center;
+    margin: 50px 0 30px 0;
+    color: #cfbcff;
+    font-size: 2.2rem;
+}
+
+/* GRID */
+.disciplinas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+/* CARDS */
+.disciplina-card {
+    background-color: #111;
+    border: 2px solid #cfbcff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.disciplina-card:hover {
+    transform: scale(1.05);
+}
+
+.disciplina-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.disciplina-card h2 {
+    margin-bottom: 10px;
+    color: #cfbcff;
+}
+
+.disciplina-card p {
+    font-size: 0.9rem;
+    overflow: visible;
+}
+
+@media (max-width: 900px) {
+    .disciplinas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .disciplinas-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CONTACTO */
+.contacto-page {
+    background-color: black;
+    color: white;
+}
+
+.contacto-page header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contacto-page main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 40px 20px;
+}
+
+.contacto-page section {
+    background-color: #111;
+    border: 2px solid #cfbcff;
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contacto-page h1 {
+    color: #cfbcff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.contacto-page form div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.contacto-page label {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.contacto-page input {
+    background-color: #222;
+    border: 1px solid #cfbcff;
+    border-radius: 6px;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contacto-page input:focus {
+    border-color: #b9a3f5;
+}
+
+.contacto-page button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #cfbcff;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contacto-page button[type="submit"]:hover {
+    background-color: #b9a3f5;
+    transform: scale(1.02);
+}
+
+/* COMUNIDAD */
+header.comunidad {
+    background-color: black !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 20px !important;
+    min-height: 80px !important;
+}
+
+header.comunidad nav ul li a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+header.comunidad nav ul li a:hover {
+    color: #cfbcff !important;
+}
+
+/* STAFF */
+header.staff {
+    background-color: black !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 20px !important;
+    min-height: 80px !important;
+}
+
+header.staff nav ul li a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+header.staff nav ul li a:hover {
+    color: #cfbcff !important;
+}
+
+body.staff-page {
+    background-color: black;
+    color: white;
+}
+
+body.comunidad-page {
+    background-color: black;
+    color: white;
 }
